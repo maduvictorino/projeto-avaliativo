@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Misgenação e Sincretismo Cultural</title>
-	<style type="text/css">
-		h1{
-			font-family:Courier New;
-			text-align: center;
-			background-color: #7FFFD4
-		}
-		body{
-			background-color: #FFEFD5
-		}
-	</style>
-</head>
-<body>
-	<h1>Formulario</h1>
- <a href="index.html">Inicio</a>
- <link rel="stylesheet" type="text/css" href="_css/stilo.css">
-         <p>Nome</p>
-         <input type="text" name="Nome Completo" placeholder="Ex: Bruna Castilho">
-         <p>Gmail</p>
-         <input type="text" name="Gmail" placeholder="@gmail.com">
-         <p>Celular</p>
-         <input type="tel" name="Celular/Telefone Fixo" placeholder="(XX)XXXXX-XXXX">
-         <p>CPF</p>
-         <input type="text" name="CPF" placeholder="XXX.XXX.XXY-XX">
-         <p>Cidade</p>
-         <input type="text" name="Cidade" placeholder="Ex: ibiporã">
-         <p>Bairro</p>
-         <input type="text" name="Bairro">
-         <p>Casa/Apartamento</p>
-         <input type="text" name="Casa/Apartamento">
-         <p>Assunto</p>
-         <input type="text" name="Assunto">
-         <p>Detalhes</p>
-         <input type="text" name="Detalhes">
-
-         <form>
-          <p><button>Enviar</button></p>
-     </form>
+    <meta charset="utf-8">
+    <title>FORMULARIO</title>
+    <script src="validacao.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/stilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ </head> 
+   
+   <body> 
+    <form method="post">
+        <h2>DADOS</h2>
+             <p>Nome</p>
+             <input type="text" name="Nome" id="nome" placeholder="Informe seu nome">
+             <p>E-mail</p>
+             <input type="text" name="Email" id="email"  placeholder="Email">
+             <p>Idade</p>
+             <select name="Idade" id="nome">
+             <option value="16">16</option>
+             <option value="17">17</option>
+             <option value="18">19</option>
+             <option value="19">20</option>
+             <option value="20">20</option>
+             <option value="21">21</option>
+             <option value="22">22</option>
+             <option value="19">23</option>
+             <option value="19">24</option>
+             <option value="19">25</option>
+             <option value="19">26</option>
+             <option value="19">27</option>
+             <option value="19">28</option>
+             <option value="19">29</option>
+             <option value="19">30</option>
+             <option value="19">30</option>
+             <option value="19">31</option>
+             <option value="19">32</option>
+             <option value="19">33</option>
+             <option value="19">34</option>
+             <option value="19">35</option>
+             <option value="19">36</option>
+             <option value="19">37</option>
+             <option value="19">38</option>
+             <option value="19">39</option>
+             <option value="19">40</option>
+             <option value="19">41</option>
+             <option value="19">42</option>
+             <option value="19">43</option>
+             <option value="19">44</option>
+             <option value="19">45</option>
+             <option value="19">46</option>
+             <option value="19">47</option>
+             <option value="19">48</option>
+             <option value="19">49</option>
+             <option value="19">50</option>
+             <option value="19">51</option>
+             <option value="19">52</option>
+             <option value="19">53</option>
+             <option value="19">54</option>
+             <option value="19">55</option>
+             <option value="19">56</option>
+             <option value="19">57</option>
+             <option value="19">58</option>
+             <option value="19">59</option>
+             <option value="19">60</option>
+             </select>
+             <p><h8>Idade mínima para cadstro 16 anos e máxima 60 anos.</h8></p>
+             <p>Fone</p>
+             <input type="tel" name="fone" id="fone" placeholder="Insira seu fone..." onkeypress="return event.charCode >= 48 && event.charCode <= 57" onblur="maksfone()">
+             <p>CPF</p>
+             <input type="text" name="CPF" id="cpf" placeholder="XXX.XXX.XXY-XX">
+             <p>Genero</p>
+             <select name="Genero" id="genero">
+             <option value="Feminino">Feminino</option>
+             <option value="Masculino">Masculino</option>
+             <option value="Outros">Outros</option>
+             </select>
+        <h2>ENDEREÇO</h2>
+             <p>Cidade</p>
+             <input type="text" name="Cidade" id="Cidade" placeholder="Ex: ibiporã">
+             <p>Bairro</p>
+             <input type="text" name="Bairro">
+             <p>CEP</p>
+             <input type="text" name="CEP" id="CEP" placeholder="Ex: ibiporã">
+             <p>Residencia</p>
+             <select name="" id="genero">
+             <option value="Casa">Casa</option>
+             <option value="Apartamento">Apartamento</option>
+             </select>
+            <p><a href="index.html">Inicio</a></p><br>
+            <button class="btn btn-primary" onclick="verificar()" name="cadastrar">CADASTRAR</button>
+    </form>
 </body>
 </html>
